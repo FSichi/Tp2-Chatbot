@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Medicare</title>
+  <meta name="keywords" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.">
+  <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.">
+
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/fonts/flat-icon/flaticon.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div id="content-wrapper">
+
+    <header class="header header--bg">
+      <div class="container">
+        <nav class="navbar">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"></a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav pull-right">
+              <!--               <li><a href="#especialidades">ESPECIALIDADES</a></li>
+ -->
+              <li><a href="#team">EQUIPO</a></li>
+              <li><a href="#about">ACERCA DE</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="row">
+          <div class="col-lg-6">
+            <img class="img-responsive" src="assets/images/running-man.png" alt="">
+          </div>
+          <div class="col-lg-6 header__content">
+            <h1 class="title">Bienvenido a Medicare</h1>
+            <p>Tu sistema medico de confianza. Si eres deportista o quieres cambiar tus habitos, estas en el lugar
+              correcto.</p>
+            <p>Contamos con el mejor equipo de profesionales a tu disposicion. Te esperamos.</p>
+            <a class="header__button" href="https://github.com/FSichi/Backend-TP2-Chatbot" target="_blank">Link Github</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="team team--bg" id="team">
+      <div class="container">
+        <div class="page-section">
+          <div class="text-center">
+            <h2 class="page-section__title">Nuestro Equipo</h2>
+            <div class="team__title-style">
+              <span class="first-line"></span>
+              <span class="second-line"></span>
+            </div>
+          </div>
+          <div class="row gutters-80">
+            <div class="col-md-4">
+              <div class="thumbnail team__single">
+                <div class="bio text-center">
+                  <img src="assets/images/team1.jpg" alt="">
+                  <h2>Facundo Aparicio</h2>
+                  <p>Legajo: 48111</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail team__single">
+                <div class="bio text-center">
+                  <img src="assets/images/team2.jpeg" alt="">
+                  <h2>Facundo Sichi</h2>
+                  <p>Legajo: 48124</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail team__single">
+                <div class="bio text-center">
+                  <img src="assets/images/team3.jpg" alt="">
+                  <h2>Nicolas Vigiani</h2>
+                  <p>Legajo: 48153</p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer footer--bg" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 footer__left">
+            <a class="navbar-brand" href="#"></a>
+            <p>Copyright <span>&copy;</span> Dart themes 2017 </p>
+            <p>Copyright <span>&copy;</span> Facundo Sichi 2022</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="assets/jquery/jquery-3.2.1.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+
+      $('button').click(function (e) {
+        $('.collapse').collapse('hide');
+      });
+    });
+  </script>
+
+  <script src="js/custom.js"></script>
+
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger-cx/bootstrap.js?v=1"></script>
+  <df-messenger df-cx="true" location="us-central1" chat-title="Reserva Turnos"
+    agent-id="509fbea2-98d5-4160-8975-c3bb9050dc6e" language-code="es"></df-messenger>
+
+</body>
+
+</html>
