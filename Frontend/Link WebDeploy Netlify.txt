@@ -1,0 +1,8 @@
+Esta es la direccion del sitio web subido en el hosting Netlify. 
+
+Link: https://medicaretp2.netlify.app/
+
+# Recordar que para que el Chatbot funcione es necesario probarlo en un sitio web con una url no local. 
+
+# Por este motivo, probarlo con el codigo lanzandolo con Live Server o directamente accediendo al link del sitio web.
+
